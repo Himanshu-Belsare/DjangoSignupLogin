@@ -30,6 +30,6 @@ class UserSerializer(serializers.ModelSerializer):
                          )
         user.set_password(validated_data['password1'])
         user.save()
-        breakpoint()
-        send_otp(validated_data['phone_number'],otp)
+        # breakpoint()
+        # send_otp(validated_data['phone_number'],otp)
         return user
